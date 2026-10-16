@@ -56,7 +56,7 @@ void loop() {
   if (pan < PAN_MIN || pan > PAN_MAX ||
       tilt < TILT_MIN || tilt > TILT_MAX) {
     Serial.println("ERROR: RANGE");
-    return;s
+    return;
   }
 
   panServo.write(pan);
